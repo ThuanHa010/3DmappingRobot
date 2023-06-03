@@ -1,0 +1,10 @@
+Raw(sum,density,delta)
+719371	7439	0.17
+PassThrough(sum,density,delta)
+677753	7439	0.17
+Voxel(sum,density,delta)
+265289	2367	0.17
+Remove outlier(sum,density,delta)
+255473	2367	0.17
+MLS(sum,density,delta)
+2.29918e+06	21319	0.27

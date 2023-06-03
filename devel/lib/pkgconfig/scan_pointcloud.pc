@@ -1,0 +1,8 @@
+prefix=/home/thuan12ha/_3Drobot_ws/devel
+
+Name: scan_pointcloud
+Description: Description of scan_pointcloud
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

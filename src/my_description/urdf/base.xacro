@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<robot name="base" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<!-- FOOTPRINT -->
+  <link name="footprint_link" />
+
+<!-- BASE -->
+  <link name="base_link">
+    <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+            <box size="${base_length} ${base_width} ${base_height}" />
+        </geometry>
+        <material name="Yellow" />
+    </visual>
+    <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+            <box size="${base_length} ${base_width} ${base_height}" />
+        </geometry>
+        <material name="Yellow" />
+    </collision>
+    <inertial>
+        <mass value="${base_mass}" />
+        <origin xyz="0 0 0" />
+        <cuboid_inertia m="${base_mass}" l="${base_length}" w="${base_width}" h="${base_height}" />
+    </inertial>       
+  </link>
+
+  <joint name="base_joint" type="fixed">
+    <origin xyz="0 0 ${wheel_radius}" rpy="0 0 0" />
+    <parent link="footprint_link" />
+    <child link="base_link" />
+  </joint>
+
+  <link name="banh_mat_trau">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="${matrau_mass}"/>
+      <sphere_inertia m = "${matrau_mass}" r = "${mattrau_radius}"/>
+    </inertial>
+    
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <sphere radius="${mattrau_radius}"/>
+      </geometry>
+      <material name="White"/>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <sphere radius= "${mattrau_radius}"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="mattrau_joint" type="fixed">
+    <origin xyz="0.0285 0 -${0.0425-0.015}" rpy="-1.5707 0 0" />
+    <parent link="base_link" />
+    <child link="banh_mat_trau" />
+  </joint>
+
+</robot>

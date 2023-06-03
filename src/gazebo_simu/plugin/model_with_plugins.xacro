@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<robot name="model_with_plugins"
+       xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find my_description)/urdf/model.xacro" />
+  <xacro:include filename="$(find gazebo_simu)/plugin/base_plugin.xacro" />
+  <!-- <xacro:include filename="$(find gazebo_simu)/plugin/motor_shafts_plugin.xacro" /> -->
+  <xacro:include filename="$(find gazebo_simu)/plugin/wheels_plugin.xacro" />
+  <!-- <xacro:include filename="$(find gazebo_simu)/plugin/imu_plugin.xacro" /> -->
+  <xacro:include filename="$(find gazebo_simu)/plugin/rplidar_plugin.xacro" />
+  <xacro:include filename="$(find gazebo_simu)/plugin/motor_plugin.xacro" />    
+
+</robot>

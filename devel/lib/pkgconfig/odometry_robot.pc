@@ -1,0 +1,8 @@
+prefix=/home/thuan12ha/_3Drobot_ws/devel
+
+Name: odometry_robot
+Description: Description of odometry_robot
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp sensor_msgs std_msgs tf

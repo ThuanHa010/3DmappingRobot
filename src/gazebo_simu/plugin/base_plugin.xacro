@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<robot name="base" 
+       xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <gazebo reference="base_link">
+    <material> Gazebo/DarkYellow </material>
+    <turnGravityOff> false </turnGravityOff>  
+  </gazebo>
+  
+</robot>

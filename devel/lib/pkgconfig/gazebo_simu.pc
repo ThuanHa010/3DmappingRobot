@@ -1,0 +1,8 @@
+prefix=/home/thuan12ha/_3Drobot_ws/devel
+
+Name: gazebo_simu
+Description: Description of gazebo_simu
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

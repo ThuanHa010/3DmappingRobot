@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/melodic/include/**",
+        "/home/thuan12ha/_3Drobot_ws/src/covert_serial_data/include/**",
+        "/home/thuan12ha/_3Drobot_ws/src/gazebo_simu/include/**",
+        "/home/thuan12ha/_3Drobot_ws/src/odometry_robot/include/**",
+        "/home/thuan12ha/_3Drobot_ws/src/scan_pointcloud/include/**",
+        "/home/thuan12ha/serial/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

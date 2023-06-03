@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<robot name="pointcloud" xmlns:xacro="http://ros.org/wiki/xacro">
+	<!-- Joints and Links, standard URDF stuff -->
+	<link name="pcl_link"/>
+
+	<joint name="pcl_joint" type="fixed">
+		<axis xyz="0 0 0"/>
+		<origin xyz="0 0 0" rpy="0 0 0 "/>
+		<parent link="rplidar_link"/>
+		<child link="pcl_link"/>
+	</joint>
+
+</robot>

@@ -1,0 +1,35 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/thuan12ha/catkin_ws/install_isolated/include/**",
+        "/home/thuan12ha/agv_ws/devel/include/**",
+        "/home/thuan12ha/catkin_ws2/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/thuan12ha/agv_ws/src/actuator/include/**",
+        "/home/thuan12ha/agv_ws/src/cmd_vel_converter/include/**",
+        "/home/thuan12ha/agv_ws/src/controller/include/**",
+        "/home/thuan12ha/agv_ws/src/gcs_transceiver/include/**",
+        "/home/thuan12ha/agv_ws/src/guider/include/**",
+        "/home/thuan12ha/agv_ws/src/mavconn/include/**",
+        "/home/thuan12ha/agv_ws/src/navigator/include/**",
+        "/home/thuan12ha/agv_ws/src/simulation/include/**",
+        "/home/thuan12ha/agv_ws/src/switch_mode_indoor/include/**",
+        "/home/thuan12ha/agv_ws/src/test_detect_obstacle/include/**",
+        "/home/thuan12ha/AGV001_ws/src/tfmini_ros/include/**",
+        "/home/thuan12ha/agv_ws/src/utils/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

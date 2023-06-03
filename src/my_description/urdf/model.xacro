@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<robot name="model"
+       xmlns:xacro="http://www.ros.org/wiki/xacro">
+       
+  <xacro:include filename="$(find my_description)/urdf/parameters.xacro" />
+  <xacro:include filename="$(find my_description)/urdf/utilities.xacro" />
+  <xacro:include filename="$(find my_description)/urdf/base.xacro" />
+  <xacro:include filename="$(find my_description)/urdf/wheels.xacro" />
+  <xacro:include filename="$(find my_description)/urdf/rplidar.xacro" />
+  <xacro:include filename="$(find my_description)/urdf/pointcloud.xacro" />
+</robot>
